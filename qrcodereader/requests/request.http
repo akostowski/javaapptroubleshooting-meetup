@@ -1,0 +1,17 @@
+###
+// @no-cookie-jar
+POST http://localhost:8083/qr/find
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="latawce.tiff"
+Content-Type: image/jpg
+
+< ./latawce.tiff
+--WebAppBoundary--
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
