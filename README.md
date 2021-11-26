@@ -1,6 +1,6 @@
 # javaapptroubleshooting-meetup
 
-##Thread dump - sample application diagram
+## Thread dump - sample application diagram
 
 ```mermaid
 graph LR;
@@ -8,7 +8,7 @@ graph LR;
     B(HelloApi)-->|/weather|C(WeatherApi);
 ```
 
-##Heap dump - sample application diagram
+## Heap dump - sample application diagram
 
 ```mermaid
 graph LR;
