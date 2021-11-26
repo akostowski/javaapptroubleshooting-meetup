@@ -1,7 +1,6 @@
 # javaapptroubleshooting-meetup
 
 ## Thread dump - sample application diagram
-
 ```mermaid
 graph LR;
     A((User))-->|/hello|B(HelloApi);
@@ -9,7 +8,6 @@ graph LR;
 ```
 
 ## Heap dump - sample application diagram
-
 ```mermaid
 graph LR;
     A((User))-->|/qr/find|B(QrCodeReader);
