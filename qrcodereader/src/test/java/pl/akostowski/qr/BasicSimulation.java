@@ -16,9 +16,9 @@ public class BasicSimulation extends Simulation {
     HttpProtocolBuilder httpProtocol = http
             .baseUrl("http://localhost:8083/qr");
 
-    ScenarioBuilder scn = scenario("Znajdowanie QR kodow").repeat(12).on(exec(http("request1")
+    ScenarioBuilder scn = scenario("Znajdowanie QR kodow").repeat(10).on(exec(http("request1")
             .post("/find")
-            .bodyPart(RawFileBodyPart("file", "C:\\ProgramData\\Anaconda3\\javaloper\\qrcodereader\\requests\\latawce.tiff"))
+            .bodyPart(RawFileBodyPart("file", "C:\\Users\\Olek\\IdeaProjects\\javaapptroubleshooting-meetup\\qrcodereader\\requests\\latawce.tiff"))
     ).exec(flushSessionCookies()));
 
     {

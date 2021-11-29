@@ -19,8 +19,7 @@ public class HelloController {
     public String welcome(@PathVariable final String name) {
         logger.info("Entering welcome method for name: {}", name);
         RestTemplate restTemplate = new RestTemplate();
-        ResponseEntity<String> response
-                = restTemplate.getForEntity("http://localhost:8080/weather/", String.class);
+        ResponseEntity<String> response = restTemplate.getForEntity("http://localhost:8080/weather/", String.class);
         return String.format("Nice to meet you %s. Today is very %s.", name, response.getBody());
     }
 }
