@@ -20,6 +20,6 @@ public class HelloController {
         logger.info("Entering welcome method for name: {}", name);
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<String> response = restTemplate.getForEntity("http://localhost:8080/weather/", String.class);
-        return String.format("Nice to meet you %s. Today is very %s day.", name, response.getBody());
+        return String.format("Nice to meet you %s. Today is a very %s day.", name, response.getBody());
     }
 }
