@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.0</version>
+        <version>3.0.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>pl.akostowski</groupId>
@@ -14,7 +14,7 @@
     <name>qrcodereader</name>
     <description>Demo project for troubleshooting</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -25,7 +25,7 @@
         <dependency>
             <groupId>org.boofcv</groupId>
             <artifactId>boofcv-core</artifactId>
-            <version>0.39.1</version>
+            <version>0.42</version>
         </dependency>
 
         <dependency>
@@ -37,7 +37,7 @@
         <dependency>
             <groupId>io.gatling.highcharts</groupId>
             <artifactId>gatling-charts-highcharts</artifactId>
-            <version>3.7.1</version>
+            <version>3.9.3</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
